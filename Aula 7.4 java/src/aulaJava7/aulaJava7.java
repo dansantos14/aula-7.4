@@ -2,21 +2,20 @@ package aulaJava7;
 
 public class aulaJava7 {
 
+	/*variavel global é acessivel a todos e o seu valor é compartilhado*/
+	static int maiorIdadeGlobal = 30;
+	
 	public static void main(String[] args) {
 	
+		/*variavel local porque pertence somente a esse metodo e o valor fica dentro do metodo*/
 	int maiorIdade = 18;
+	System.out.println("valor da variavel local = " + maiorIdade);
 	
-	int idosoIdade = 60;
+	metodo2 ();
 	
-	int jovemIdade = 16;
-	
-	int criancaIdade = 7;
-	
-	System.out.println("Idoso idade é = " + idosoIdade);
-	System.out.println("Maior idade é = " + maiorIdade);
-	System.out.println("Jovem idade é = " + jovemIdade);
-	System.out.println("Criança idade é = " + criancaIdade);
-		
 	}
 
+	public static void metodo2 () {
+		System.out.println("Valor da variavel global = " + maiorIdadeGlobal);
+	}
 }
